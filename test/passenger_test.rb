@@ -15,19 +15,19 @@ class PassengerTest < MiniTest::Test
   end
 
   def test_it_initializes_name_and_age
-    skip
+    # skip
     assert_equal "Charlie", @charlie.name
     assert_equal 18, @charlie.age
   end
 
   def test_it_can_tell_us_if_adult?
-    skip
+    # skip
     assert_equal true, @charlie.adult?
     assert_equal false, @taylor.adult?
   end
 
   def test_it_can_tell_us_if_driver?
-    skip
+    # skip
     assert_equal false, @charlie.driver?
     @charlie.drive
     assert_equal true, @charlie.driver?
