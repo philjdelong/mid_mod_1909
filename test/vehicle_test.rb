@@ -41,6 +41,9 @@ class VehicleTest < MiniTest::Test
   end
 
   def test_it_can_tell_us_number_of_adults
+    @vehicle.add_passenger(@charlie)
+    @vehicle.add_passenger(@jude)
+    @vehicle.add_passenger(@taylor)
     assert_equal 2, @vehicle. num_adults
   end
 
